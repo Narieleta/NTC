@@ -13,42 +13,67 @@
        	<link rel="stylesheet" href="web/css/normalize.css">
 
 		<link rel="stylesheet" type="text/css" href="vendor/TipueSearch/tipuesearch/tipuesearch.css">
-		<script src="../../vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 	    <script>
 	        $(document).ready(function(){
-	           $("#ocultar").click(function(event){
+	           $("#menuaplicacion").click(function(event){
 	                event.preventDefault();
-	                $("#tipologia").hide("slow");
-	                $("#series").hide("slow");
-	                $("#prueba").show("4000");
+	                $("#cocina").show("slow");
+	                $("#baño").show("slow");
+	                $("#revinterior").show("slow");
+	                $("#pavinterior").show("slow");
+	                $("#pavexterior").show("slow");
+	                $("#pavintext").show("slow");
+	                $("#piscinas").show("slow");
+	                $("#sepambientes").show("slow");
+	                $("#industrial").show("slow");
+	                $("#comercio").show("slow");
+	                $("#fachadas").show("slow");
+	                $("#jardines").show("slow");
 	            });
 
-	           /* $("#mostrar").click(function(event){
+	           $("#menucerrar").click(function(event){
 	                event.preventDefault();
-	                $("#reconocimientos").show(2000);
-	                $("#ubicacion").show(2000);
-	           }); */
-	            $("#ocultar2").click(function(event){
+	                $("#aplicacion").show(2000);
+	                $("#cocina").hide("slow");
+	                $("#baño").hide("slow");
+	                $("#revinterior").hide("slow");
+	                $("#pavinterior").hide("slow");
+	                $("#pavexterior").hide("slow");
+	                $("#pavintext").hide("slow");
+	                $("#piscinas").hide("slow");
+	                $("#sepambientes").hide("slow");
+	                $("#industrial").hide("slow");
+	                $("#comercio").hide("slow");
+	                $("#fachadas").hide("slow");
+	                $("#jardines").hide("slow");
+	           });
+	           
+	           $("#menutipologia").click(function(event){
 	                event.preventDefault();
-	                $("#historia").hide('slow');
-	                // $("#reconocimientos").hide("slow");
-	                $("#ubicacion").hide("slow");
-	                $("#reconocimientos2").show("4000");
-	            });
-	            $("#ocultar3").click(function(event){
-	                event.preventDefault();
-	                $("#historia").hide('slow');
-	                $("#reconocimientos").hide("slow");
-	                // $("#ubicacion").hide("slow");
-	                $("#ubicacion2").show("4000");
-	            });
+	                $("#tipologia").css("background-color", "grey");
+	                $("#menutipologia").hide("slow");
+	                $("#menucerrartipo").show("slow");
+	                $("#cocina").show("slow");
+	                //$("#baño").hide("slow");
+	                //$("#revinterior").hide("slow");
+	                //$("#pavinterior").hide("slow");
+	                //$("#pavexterior").hide("slow");
+	                //$("#pavintext").hide("slow");
+	                //$("#piscinas").hide("slow");
+	                //$("#sepambientes").hide("slow");
+	                //$("#industrial").hide("slow");
+	                //$("#comercio").hide("slow");
+	                //$("#fachadas").hide("slow");
+	                //$("#jardines").hide("slow");
+	           });
 	        });
 	    </script>
 	</head>
 	<body>
 
 		<!-- Header -->
-        
+        	
 			<header id="header">
 				<h1><a href="index.html"><img src="web/images/logos/logo-ngr.png" width="275" height="24"></a></h1>
 				<nav id="nav">
@@ -68,57 +93,199 @@
 					</ul>
                 </nav>
             </header>
-		<div id="prueba" style="display: hidden">
-			<p>Esta es una capa que aparece y desaparece</p>
-		</div>
-		
+		 
 		<section id="main" class="wrapper">
 				<div class="inner">
 
 					<header class="major">
 						<h2>PRODUCTO</h2><br><br><br>
 						<div class="posts">
-						<section class="post">
-							<span class="image"><img src="web/images/aplicacion.png" alt="" /></span>
-							<div class="content" id="aplicacion">
-								<h3>Aplicación</h3>
-								<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p>
-								<ul class="actions">
-									<li><a href="#" id="ocultar" class="button">Ver más</a></li>
-								</ul>
-						  </div>
-						</section>
-						<section class="post">
-							<span class="image"><img src="web/images/tipologia.png" alt="" /></span>
-							<div class="content" id="tipologia">
-								<h3>Tipologia</h3>
-								<p>Si se dedica al sector profesional y está buscando un formato en concreto,
-                                aquí lo encontrará.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Ver más</a></li>
-								</ul>
-						  </div>
-						</section>
-						<section class="post">
-							<span class="image"><img src="web/images/series.png" alt="" /></span>
-							<div class="content" id="series">
-								<h3>Series</h3>
-								<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
-								<br/>
-								<ul class="actions">
-									<li><a href="#" class="button">Ver más</a></li>
-								</ul>
-							</div>
-						</section>
-                       
-						
-				  </div>
+							<section class="post">
+								<span class="image"><img src="web/images/aplicacion.png" alt="" /></span>
+								<div class="content">
+									<h3>Aplicación</h3>
+									<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p>
+									<ul class="actions">
+										<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
+									</ul>
+							  	</div>
+							</section>
+							<section class="post">
+								<span class="image"><img src="web/images/tipologia.png" alt="" /></span>
+								<div id="tipologia">
+									<div class="content">
+										<h3>Tipologia</h3>
+										<p>Si se dedica al sector profesional y está buscando un formato en concreto,
+		                                aquí lo encontrará.</p>
+		                                <br/>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menutipologia">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrartipo" style="display:none">Ver menos</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<span class="image"><img src="web/images/series.png" alt="" /></span>
+								<div class="content" id="series">
+									<h3>Series</h3>
+									<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
+									<br/>
+									<ul class="actions">
+										<li><a href="#" class="button">Ver más</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="post">
+								<div id="cocina" style="display:none">
+									<div class="content">
+										<h3>Cocina</h3>
+										<p>Toda la información necesaria sobre nuestros productos para cocinas.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="baño" style="display:none">
+									<div class="content">
+										<h3>Baño</h3>
+										<p>Toda la información necesaria sobre nuestros productos para baños.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="revinterior" style="display:none">
+									<div class="content">
+										<h3>Revestimiento interior</h3>
+										<p>Toda la información necesaria sobre nuestros productos para revestimientos interiores.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="pavinterior" style="display:none">
+									<div class="content">
+										<h3>Pavimento interior</h3>
+										<p>Toda la información necesaria sobre nuestros productos para pavimentos interiores.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="pavexterior" style="display:none">
+									<div class="content">
+										<h3>Pavimento exterior</h3>
+										<p>Toda la información necesaria sobre nuestros productos para pavimentos exteriores.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="pavintext" style="display:none">
+									<div class="content">
+										<h3>Pavimento exterior e interior</h3>
+										<p>Toda la información necesaria sobre nuestros productos para pavimentos exteriores e interiores.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="piscinas" style="display:none">
+									<div class="content">
+										<h3>Piscina / Wellness</h3>
+										<p>Toda la información necesaria sobre nuestros productos para piscinas y wellness.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="sepambientes" style="display:none">
+									<div class="content">
+										<h3>Separador de ambientes</h3>
+										<p>Toda la información necesaria sobre nuestros productos para separación de ambientes.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="industrial" style="display:none">
+									<div class="content">
+										<h3>Industrial</h3>
+										<p>Toda la información necesaria sobre nuestros productos para utilización industrial.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="comercio" style="display:none">
+									<div class="content">
+										<h3>Comercio / Público</h3>
+										<p>Toda la información necesaria sobre nuestros productos para el comercio o público.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="fachadas" style="display:none">
+									<div class="content">
+										<h3>Fachadas</h3>
+										<p>Toda la información necesaria sobre nuestros productos para fachadas.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div id="jardines" style="display:none">
+									<div class="content">
+										<h3>Jardines y exteriores</h3>
+										<p>Toda la información necesaria sobre nuestros productos para jardines y exteriores.</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+						</div>
 					</header>
-                    </div>
-
+            	</div>
+		</section>
 		
-
-		
+		<!-- PRUEBA DE EFECTOS DE LA CAPA 
+		<div id="capa" style="background-color: #cc7700; color:fff; padding:10px;">
+            Esto es una capa que nos servirá para hacer efectos
+            <br>
+            <br>
+            Pongo este texto simplemente de prueba
+        </div>
+        <p>
+        <a href="#" id="botonocultar">Ocultar la capa |</a> 
+        <a href="#" id="botonmostrar"> Mostrar la capa</a> 
+        </p> -->
+        	
 
 		<!-- Footer -->
 			<footer id="footer">
