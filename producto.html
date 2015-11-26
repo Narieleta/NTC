@@ -10,9 +10,40 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="web/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="web/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="web/css/noscript.css" /></noscript>
-       <link rel="stylesheet" href="web/css/normalize.css">
+       	<link rel="stylesheet" href="web/css/normalize.css">
 
-	<link rel="stylesheet" type="text/css" href="vendor/TipueSearch/tipuesearch/tipuesearch.css">
+		<link rel="stylesheet" type="text/css" href="vendor/TipueSearch/tipuesearch/tipuesearch.css">
+		<script src="../../vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	    <script>
+	        $(document).ready(function(){
+	           $("#ocultar").click(function(event){
+	                event.preventDefault();
+	                $("#tipologia").hide("slow");
+	                $("#series").hide("slow");
+	                $("#prueba").show("4000");
+	            });
+
+	           /* $("#mostrar").click(function(event){
+	                event.preventDefault();
+	                $("#reconocimientos").show(2000);
+	                $("#ubicacion").show(2000);
+	           }); */
+	            $("#ocultar2").click(function(event){
+	                event.preventDefault();
+	                $("#historia").hide('slow');
+	                // $("#reconocimientos").hide("slow");
+	                $("#ubicacion").hide("slow");
+	                $("#reconocimientos2").show("4000");
+	            });
+	            $("#ocultar3").click(function(event){
+	                event.preventDefault();
+	                $("#historia").hide('slow');
+	                $("#reconocimientos").hide("slow");
+	                // $("#ubicacion").hide("slow");
+	                $("#ubicacion2").show("4000");
+	            });
+	        });
+	    </script>
 	</head>
 	<body>
 
@@ -34,12 +65,13 @@
 							</form>
 							</div>
 						</li>
-
-				  </ul>
-                  
-			  </nav>
-              
-	</header>
+					</ul>
+                </nav>
+            </header>
+		<div id="prueba" style="display: hidden">
+			<p>Esta es una capa que aparece y desaparece</p>
+		</div>
+		
 		<section id="main" class="wrapper">
 				<div class="inner">
 
@@ -48,17 +80,17 @@
 						<div class="posts">
 						<section class="post">
 							<span class="image"><img src="web/images/aplicacion.png" alt="" /></span>
-							<div class="content">
+							<div class="content" id="aplicacion">
 								<h3>Aplicación</h3>
-								<p>Baño, cocina, interior, exterior, encuentré el producto según el tipo de ambiente que quiera vestir</p>
+								<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p>
 								<ul class="actions">
-									<li><a href="#" class="button">Ver más</a></li>
+									<li><a href="#" id="ocultar" class="button">Ver más</a></li>
 								</ul>
 						  </div>
 						</section>
 						<section class="post">
 							<span class="image"><img src="web/images/tipologia.png" alt="" /></span>
-							<div class="content">
+							<div class="content" id="tipologia">
 								<h3>Tipologia</h3>
 								<p>Si se dedica al sector profesional y está buscando un formato en concreto,
                                 aquí lo encontrará.</p>
@@ -69,9 +101,10 @@
 						</section>
 						<section class="post">
 							<span class="image"><img src="web/images/series.png" alt="" /></span>
-							<div class="content">
+							<div class="content" id="series">
 								<h3>Series</h3>
-								<p>Conoce el nombre de la serie, busque directamente su serie entrando en esta sección.</p>
+								<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
+								<br/>
 								<ul class="actions">
 									<li><a href="#" class="button">Ver más</a></li>
 								</ul>
