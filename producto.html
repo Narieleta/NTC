@@ -18,6 +18,7 @@
 	        $(document).ready(function(){
 	           $("#menuaplicacion").click(function(event){
 	                event.preventDefault();
+	                $("#aplicacion").css("background-color", "grey");
 	                $("#cocina").show("slow");
 	                $("#baño").show("slow");
 	                $("#revinterior").show("slow");
@@ -34,7 +35,7 @@
 
 	           $("#menucerrar").click(function(event){
 	                event.preventDefault();
-	                $("#aplicacion").show(2000);
+	                $("#aplicacion").css("background-color", "white");
 	                $("#cocina").hide("slow");
 	                $("#baño").hide("slow");
 	                $("#revinterior").hide("slow");
@@ -54,18 +55,22 @@
 	                $("#tipologia").css("background-color", "grey");
 	                $("#menutipologia").hide("slow");
 	                $("#menucerrartipo").show("slow");
-	                $("#cocina").show("slow");
-	                //$("#baño").hide("slow");
-	                //$("#revinterior").hide("slow");
-	                //$("#pavinterior").hide("slow");
-	                //$("#pavexterior").hide("slow");
-	                //$("#pavintext").hide("slow");
-	                //$("#piscinas").hide("slow");
-	                //$("#sepambientes").hide("slow");
-	                //$("#industrial").hide("slow");
-	                //$("#comercio").hide("slow");
-	                //$("#fachadas").hide("slow");
-	                //$("#jardines").hide("slow");
+	                $("#ceramica").show("slow");
+	                $("#cervolumetrica").show("slow");
+	                $("#piedra").show("slow");
+	                $("#madera").show("slow");
+	                $("#barro").show("slow");
+	           });
+	           $("#menucerrartipo").click(function(event){
+	                event.preventDefault();
+	                $("#tipologia").css("background-color", "white");
+	                $("#menutipologia").show("slow");
+	                $("#menucerrartipo").hide("slow");
+	                $("#ceramica").hide("slow");
+	                $("#cervolumetrica").hide("slow");
+	                $("#piedra").hide("slow");
+	                $("#madera").hide("slow");
+	                $("#barro").hide("slow");
 	           });
 	        });
 	    </script>
@@ -101,24 +106,28 @@
 						<h2>PRODUCTO</h2><br><br><br>
 						<div class="posts">
 							<section class="post">
-								<span class="image"><img src="web/images/aplicacion.png" alt="" /></span>
-								<div class="content">
-									<h3>Aplicación</h3>
-									<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p>
-									<ul class="actions">
-										<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
-									</ul>
-							  	</div>
+								<!-- <span class="image"><img src="web/images/aplicacion.png" alt="" /></span> -->
+								<div id="aplicacion">
+									<div class="content">
+										<h3>Aplicación</h3>
+										<!--<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p> -->
+										<p>IMAGEN DE APLICACION</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
+										</ul>
+								  	</div>
+								</div>
 							</section>
 							<section class="post">
-								<span class="image"><img src="web/images/tipologia.png" alt="" /></span>
+								<!-- <span class="image"><img src="web/images/tipologia.png" alt="" /></span> -->
 								<div id="tipologia">
 									<div class="content">
 										<h3>Tipologia</h3>
-										<p>Si se dedica al sector profesional y está buscando un formato en concreto,
-		                                aquí lo encontrará.</p>
-		                                <br/>
+										<!-- <p>Si se dedica al sector profesional y está buscando un formato en concreto,
+		                                aquí lo encontrará.</p> 
+		                                <br/> -->
+		                                <p>IMAGEN DE TIPOLOGIA</p>
 										<ul class="actions">
 											<li><a href="#" class="button" id="menutipologia">Ver más</a></li>
 											<li><a href="#" class="button" id="menucerrartipo" style="display:none">Ver menos</a></li>
@@ -127,146 +136,421 @@
 								</div>
 							</section>
 							<section class="post">
-								<span class="image"><img src="web/images/series.png" alt="" /></span>
+								<!-- <span class="image"><img src="web/images/series.png" alt="" /></span> -->
 								<div class="content" id="series">
 									<h3>Series</h3>
-									<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
-									<br/>
+									<!-- <p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
+									<br/> -->
+									<p>IMAGEN DE SERIES</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Ver más</a></li>
 									</ul>
 								</div>
 							</section>
 							<section class="post">
-								<div id="cocina" style="display:none">
+								<div class="caja" id="cocina">
 									<div class="content">
-										<h3>Cocina</h3>
-										<p>Toda la información necesaria sobre nuestros productos para cocinas.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
-								  	</div>
+									<a href="#" id="menucerrar">
+										
+											<h3>Cocina</h3>
+											<p>Imagen de cocinas</p>
+										
+									</a></div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="baño" style="display:none">
+								<div class="caja" id="baño">
 									<div class="content">
 										<h3>Baño</h3>
-										<p>Toda la información necesaria sobre nuestros productos para baños.</p>
-										<ul class="actions">
+										<p>Imagen de baños</p>
+										<!-- <ul class="actions">
 											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										</ul> -->
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="revinterior" style="display:none">
+								<div class="caja" id="revinterior">
 									<div class="content">
 										<h3>Revestimiento interior</h3>
-										<p>Toda la información necesaria sobre nuestros productos para revestimientos interiores.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
-								  	</div>
+										<p>Imagen de revestimiento interior</p>
+									</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="pavinterior" style="display:none">
+								<div class="caja" id="pavinterior">
 									<div class="content">
 										<h3>Pavimento interior</h3>
-										<p>Toda la información necesaria sobre nuestros productos para pavimentos interiores.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
-								  	</div>
+										<p>Imagen pavimentos interiores</p>
+									</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="pavexterior" style="display:none">
+								<div class="caja" id="pavexterior">
 									<div class="content">
 										<h3>Pavimento exterior</h3>
-										<p>Toda la información necesaria sobre nuestros productos para pavimentos exteriores.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
-								  	</div>
+										<p>Imagen pavimento exterior</p>
+									</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="pavintext" style="display:none">
+								<div class="caja" id="pavintext">
 									<div class="content">
 										<h3>Pavimento exterior e interior</h3>
-										<p>Toda la información necesaria sobre nuestros productos para pavimentos exteriores e interiores.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
-								  	</div>
+										<p>Imagen pavimentos exteriores e interiores</p>
+									</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="piscinas" style="display:none">
+								<div class="caja" id="piscinas">
 									<div class="content">
 										<h3>Piscina / Wellness</h3>
-										<p>Toda la información necesaria sobre nuestros productos para piscinas y wellness.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen Piscinas / Wellness</p>
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="sepambientes" style="display:none">
+								<div class="caja" id="sepambientes">
 									<div class="content">
 										<h3>Separador de ambientes</h3>
-										<p>Toda la información necesaria sobre nuestros productos para separación de ambientes.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen separador de ambientes</p>
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="industrial" style="display:none">
+								<div class="caja" id="industrial">
 									<div class="content">
 										<h3>Industrial</h3>
-										<p>Toda la información necesaria sobre nuestros productos para utilización industrial.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen industrial</p>
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="comercio" style="display:none">
+								<div class="caja" id="comercio">
 									<div class="content">
 										<h3>Comercio / Público</h3>
-										<p>Toda la información necesaria sobre nuestros productos para el comercio o público.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen comercio</p>
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="fachadas" style="display:none">
+								<div class="caja" id="fachadas">
 									<div class="content">
 										<h3>Fachadas</h3>
-										<p>Toda la información necesaria sobre nuestros productos para fachadas.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen fachadas</p>
 								  	</div>
 								</div>
 							</section>
 							<section class="post">
-								<div id="jardines" style="display:none">
+								<div class="caja" id="jardines">
 									<div class="content">
 										<h3>Jardines y exteriores</h3>
-										<p>Toda la información necesaria sobre nuestros productos para jardines y exteriores.</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-										</ul>
+										<p>Imagen jardines y exteriores</p>
 								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="ceramica">
+									<div class="content">
+										<h3>Ceramica</h3>
+										<p>Imagen de cerámica</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="piedra">
+									<div class="content">
+										<h3>Piedra</h3>
+										<p>Imagen de piedra</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cervolumetrica">
+									<div class="content">
+										<h3>Cerámica Volumétrica</h3>
+										<p>Imagen de cerámica volumétrica</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="madera">
+									<div class="content">
+										<h3>Madera</h3>
+										<p>Imagen de madera</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="barro">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de barro</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="bisell">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de bisell</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="bamboo">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de bamboo</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="channel">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de channel</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="classicfine">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de classic fine</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="colisseum">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de colisseum</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cometa">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de cometa</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cottostone">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de cottostone</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cuarcita">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de cuarcita</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cube">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de cube</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="eclipse">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de eclipse</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="duna">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de duna</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="filterfloor">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de filter floor</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="formats">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de formats</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="gardencity">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de garden city</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="ivy">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de ivy</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="lagunagrande">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de laguna grande</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="liebana">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de liebana</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="lofty">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de lofty</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="novecento">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de novecento</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="mattone">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de mattone</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="panal">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de panal</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="piemonte">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de piemonte</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="pietradiferenze">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de pietra di ferenze</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="quartzklinker">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de quartz klinker</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="rocasdegalicia">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de rocas de galicia</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="rowcube">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de rowcube</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="scale">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de scale</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="signes">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de signes</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="symbols">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de symbols</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="stoneklinker">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de stone klinker</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="tierrasibericas">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de tierras ibéricas</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="tropicalforest">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de tropical forest</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="venecia">
+									<div class="content">
+										<h3>Barro</h3>
+										<p>Imagen de venecia</p>
+									</div>
 								</div>
 							</section>
 						</div>
