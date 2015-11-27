@@ -16,7 +16,7 @@
 		<script src="vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 	    <script>
 	        $(document).ready(function(){
-	           $("#menuaplicacion").click(function(event){
+	            $("#menuaplicacion").click(function(event){
 	                event.preventDefault();
 	                $("#aplicacion").css("background-color", "grey");
 	                $("#cocina").show("slow");
@@ -33,7 +33,7 @@
 	                $("#jardines").show("slow");
 	            });
 
-	           $("#menucerrar").click(function(event){
+	            $("#menucerrar").click(function(event){
 	                event.preventDefault();
 	                $("#aplicacion").css("background-color", "white");
 	                $("#cocina").hide("slow");
@@ -48,9 +48,9 @@
 	                $("#comercio").hide("slow");
 	                $("#fachadas").hide("slow");
 	                $("#jardines").hide("slow");
-	           });
+	            });
 	           
-	           $("#menutipologia").click(function(event){
+	            $("#menutipologia").click(function(event){
 	                event.preventDefault();
 	                $("#tipologia").css("background-color", "grey");
 	                $("#menutipologia").hide("slow");
@@ -60,8 +60,8 @@
 	                $("#piedra").show("slow");
 	                $("#madera").show("slow");
 	                $("#barro").show("slow");
-	           });
-	           $("#menucerrartipo").click(function(event){
+	            });
+	            $("#menucerrartipo").click(function(event){
 	                event.preventDefault();
 	                $("#tipologia").css("background-color", "white");
 	                $("#menutipologia").show("slow");
@@ -71,8 +71,8 @@
 	                $("#piedra").hide("slow");
 	                $("#madera").hide("slow");
 	                $("#barro").hide("slow");
-	           });
-	           $("#menuseries").click(function(event){
+	           	});
+	           	$("#menuseries").click(function(event){
 	                event.preventDefault();
 	                $("#series").css("background-color", "grey");
 	                $("#menuseries").hide("slow");
@@ -82,47 +82,79 @@
 	                $("#channel").show("slow");
 	                $("#classicfine").show("slow");
 	                $("#colisseum").show("slow");
-	                $("cometa").show("slow");
-	                $("cottostone").show("slow");
-	                $("cuarcita").show("slow");
-	                $("cube").show("slow");
-	                $("eclipse").show("slow");
-	                $("duna").show("slow");
-	                $("filterfloor").show("slow");
-	                $("formats").show("slow");
-	                $("gardencity").show("slow");
-	                $("ivy").show("slow");
-	                $("lagunagrande").show("slow");
-	                $("liebana").show("slow");
-	                $("lofty").show("slow");
-	                $("novecento").show("slow");
-	                $("mattone").show("slow");
-	                $("panal").show("slow");
-	                $("piemonte").show("slow");
-	                $("pietradiferenze").show("slow");
-	                $("quartzklinker").show("slow");
-	                $("rocasdegalicia").show("slow");
-	                $("rowcube").show("slow");
-	                $("scale").show("slow");
-	                $("signes").show("slow");
-	                $("symbols").show("slow");
-	                $("stoneklinker").show("slow");
-	                $("tierrasibericas").show("slow");
-	                $("tropicalforest").show("slow");
-	                $("venecia").show("slow");
-
-	           });
-	           $("#menucerrarseries").click(function(event){
+	                $("#cometa").show("slow");
+	                $("#cottostone").show("slow");
+	                $("#cuarcita").show("slow");
+	                $("#cube").show("slow");
+	                $("#eclipse").show("slow");
+	                $("#duna").show("slow");
+	                $("#filterfloor").show("slow");
+	                $("#formats").show("slow");
+	                $("#gardencity").show("slow");
+	                $("#ivy").show("slow");
+	                $("#lagunagrande").show("slow");
+	                $("#liebana").show("slow");
+	                $("#lofty").show("slow");
+	                $("#novecento").show("slow");
+	                $("#mattone").show("slow");
+	                $("#panal").show("slow");
+	                $("#piemonte").show("slow");
+	                $("#pietradiferenze").show("slow");
+	                $("#quartzklinker").show("slow");
+	                $("#rocasdegalicia").show("slow");
+	                $("#rowcube").show("slow");
+	                $("#scale").show("slow");
+	                $("#signes").show("slow");
+	                $("#symbols").show("slow");
+	                $("#stoneklinker").show("slow");
+	                $("#tierrasibericas").show("slow");
+	                $("#tropicalforest").show("slow");
+	                $("#venecia").show("slow");
+	           	});
+	           	$("#menucerrarseries").click(function(event){
 	                event.preventDefault();
-	                $("#tipologia").css("background-color", "white");
-	                $("#menutipologia").show("slow");
-	                $("#menucerrartipo").hide("slow");
-	                $("#ceramica").hide("slow");
-	                $("#cervolumetrica").hide("slow");
-	                $("#piedra").hide("slow");
-	                $("#madera").hide("slow");
-	                $("#barro").hide("slow");
-	           });
+	                $("#series").css("background-color", "white");
+	                $("#menuseries").show("slow");
+	                $("#menucerrarseries").hide("slow");
+	                $("#bisell").hide("slow");
+	                $("#bamboo").hide("slow");
+	                $("#channel").hide("slow");
+	                $("#classicfine").hide("slow");
+	                $("#colisseum").hide("slow");
+	                $("#cometa").hide("slow");
+	                $("#cottostone").hide("slow");
+	                $("#cuarcita").hide("slow");
+	                $("#cube").hide("slow");
+	                $("#eclipse").hide("slow");
+	                $("#duna").hide("slow");
+	                $("#filterfloor").hide("slow");
+	                $("#formats").hide("slow");
+	                $("#gardencity").hide("slow");
+	                $("#ivy").hide("slow");
+	                $("#lagunagrande").hide("slow");
+	                $("#liebana").hide("slow");
+	                $("#lofty").hide("slow");
+	                $("#novecento").hide("slow");
+	                $("#mattone").hide("slow");
+	                $("#panal").hide("slow");
+	                $("#piemonte").hide("slow");
+	                $("#pietradiferenze").hide("slow");
+	                $("#quartzklinker").hide("slow");
+	                $("#rocasdegalicia").hide("slow");
+	                $("#rowcube").hide("slow");
+	                $("#scale").hide("slow");
+	                $("#signes").hide("slow");
+	                $("#symbols").hide("slow");
+	                $("#stoneklinker").hide("slow");
+	                $("#tierrasibericas").hide("slow");
+	                $("#tropicalforest").hide("slow");
+	                $("#venecia").hide("slow");
+	           	}); 				
+				$("#menubamboo").click(function(event) {
+					event.preventDefault();
+					$("#pasarela").show("slow");
+
+				}); 
 	        });
 	    </script>
 	</head>
@@ -149,7 +181,36 @@
 					</ul>
                 </nav>
             </header>
-		 
+
+		<!-- BANNER -->
+		<div id="pasarela" style="display: none">
+	        <section id="banner">
+	            <article>
+	                <img src="web/producto/bamboo/amb-bamboo2.jpg"  alt="" />
+	                    <div class="inner">
+	                    	<h2><a href="#">Ambiente Bamboo.</a></h2>
+	                  	</div>
+	            </article>
+	            <article>
+	                <img src="web/producto/bamboo/amb-bamboo-cocina.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Cocina Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <article>
+	                <img src="web/producto/bamboo/fachada.bamboo.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Fachada Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <!-- <article>
+	                <img src="../images/presentacion/concret-3d.jpg"  alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">A tribute to the ceramic tradition.</a></h2>
+	                    </div>
+	            </article> -->
+	        </section> 
+		</div>
 		<section id="main" class="wrapper">
 				<div class="inner">
 
@@ -211,12 +272,11 @@
 							<section class="post">
 								<div class="caja" id="cocina">
 									<div class="content">
-									<a href="#" id="menucerrar">
-										
+										<a href="#" id="menucerrar">
 											<h3>Cocina</h3>
 											<p>Imagen de cocinas</p>
-										
-									</a></div>
+										</a>
+									</div>
 								</div>
 							</section>
 							<section class="post">
@@ -353,7 +413,7 @@
 							<section class="post">
 								<div class="caja" id="bisell">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Bisell</h3>
 										<p>Imagen de bisell</p>
 									</div>
 								</div>
@@ -361,15 +421,17 @@
 							<section class="post">
 								<div class="caja" id="bamboo">
 									<div class="content">
-										<h3>Barro</h3>
-										<p>Imagen de bamboo</p>
+										<a href="#" id="menubamboo">
+											<h3>Bamboo</h3>
+											<p>Imagen de bamboo</p>
+										</a>
 									</div>
 								</div>
 							</section>
 							<section class="post">
 								<div class="caja" id="channel">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Channel</h3>
 										<p>Imagen de channel</p>
 									</div>
 								</div>
@@ -377,7 +439,7 @@
 							<section class="post">
 								<div class="caja" id="classicfine">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Classic Fine</h3>
 										<p>Imagen de classic fine</p>
 									</div>
 								</div>
@@ -385,7 +447,7 @@
 							<section class="post">
 								<div class="caja" id="colisseum">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Colisseum</h3>
 										<p>Imagen de colisseum</p>
 									</div>
 								</div>
@@ -393,7 +455,7 @@
 							<section class="post">
 								<div class="caja" id="cometa">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Cometa</h3>
 										<p>Imagen de cometa</p>
 									</div>
 								</div>
@@ -401,7 +463,7 @@
 							<section class="post">
 								<div class="caja" id="cottostone">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Cottostone</h3>
 										<p>Imagen de cottostone</p>
 									</div>
 								</div>
@@ -409,7 +471,7 @@
 							<section class="post">
 								<div class="caja" id="cuarcita">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Cuarcita</h3>
 										<p>Imagen de cuarcita</p>
 									</div>
 								</div>
@@ -417,7 +479,7 @@
 							<section class="post">
 								<div class="caja" id="cube">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Cube</h3>
 										<p>Imagen de cube</p>
 									</div>
 								</div>
@@ -425,7 +487,7 @@
 							<section class="post">
 								<div class="caja" id="eclipse">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Eclipse</h3>
 										<p>Imagen de eclipse</p>
 									</div>
 								</div>
@@ -433,7 +495,7 @@
 							<section class="post">
 								<div class="caja" id="duna">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Duna</h3>
 										<p>Imagen de duna</p>
 									</div>
 								</div>
@@ -441,7 +503,7 @@
 							<section class="post">
 								<div class="caja" id="filterfloor">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Filter Floor</h3>
 										<p>Imagen de filter floor</p>
 									</div>
 								</div>
@@ -449,7 +511,7 @@
 							<section class="post">
 								<div class="caja" id="formats">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Formats</h3>
 										<p>Imagen de formats</p>
 									</div>
 								</div>
@@ -457,7 +519,7 @@
 							<section class="post">
 								<div class="caja" id="gardencity">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Garden city</h3>
 										<p>Imagen de garden city</p>
 									</div>
 								</div>
@@ -465,7 +527,7 @@
 							<section class="post">
 								<div class="caja" id="ivy">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Content</h3>
 										<p>Imagen de ivy</p>
 									</div>
 								</div>
@@ -473,7 +535,7 @@
 							<section class="post">
 								<div class="caja" id="lagunagrande">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Laguna grande</h3>
 										<p>Imagen de laguna grande</p>
 									</div>
 								</div>
@@ -481,15 +543,15 @@
 							<section class="post">
 								<div class="caja" id="liebana">
 									<div class="content">
-										<h3>Barro</h3>
-										<p>Imagen de liebana</p>
+										<h3>Liébana</h3>
+										<p>Imagen de liébana</p>
 									</div>
 								</div>
 							</section>
 							<section class="post">
 								<div class="caja" id="lofty">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Lofty</h3>
 										<p>Imagen de lofty</p>
 									</div>
 								</div>
@@ -497,7 +559,7 @@
 							<section class="post">
 								<div class="caja" id="novecento">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Novecento</h3>
 										<p>Imagen de novecento</p>
 									</div>
 								</div>
@@ -505,7 +567,7 @@
 							<section class="post">
 								<div class="caja" id="mattone">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Mattone</h3>
 										<p>Imagen de mattone</p>
 									</div>
 								</div>
@@ -513,7 +575,7 @@
 							<section class="post">
 								<div class="caja" id="panal">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Panal</h3>
 										<p>Imagen de panal</p>
 									</div>
 								</div>
@@ -521,7 +583,7 @@
 							<section class="post">
 								<div class="caja" id="piemonte">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Piemonte</h3>
 										<p>Imagen de piemonte</p>
 									</div>
 								</div>
@@ -529,7 +591,7 @@
 							<section class="post">
 								<div class="caja" id="pietradiferenze">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Pietra di ferenze</h3>
 										<p>Imagen de pietra di ferenze</p>
 									</div>
 								</div>
@@ -537,7 +599,7 @@
 							<section class="post">
 								<div class="caja" id="quartzklinker">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Quartz klinker</h3>
 										<p>Imagen de quartz klinker</p>
 									</div>
 								</div>
@@ -545,7 +607,7 @@
 							<section class="post">
 								<div class="caja" id="rocasdegalicia">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Rocas de Galicia</h3>
 										<p>Imagen de rocas de galicia</p>
 									</div>
 								</div>
@@ -553,7 +615,7 @@
 							<section class="post">
 								<div class="caja" id="rowcube">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Row cube</h3>
 										<p>Imagen de rowcube</p>
 									</div>
 								</div>
@@ -561,7 +623,7 @@
 							<section class="post">
 								<div class="caja" id="scale">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Scale</h3>
 										<p>Imagen de scale</p>
 									</div>
 								</div>
@@ -569,7 +631,7 @@
 							<section class="post">
 								<div class="caja" id="signes">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Signes</h3>
 										<p>Imagen de signes</p>
 									</div>
 								</div>
@@ -577,7 +639,7 @@
 							<section class="post">
 								<div class="caja" id="symbols">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Symbols</h3>
 										<p>Imagen de symbols</p>
 									</div>
 								</div>
@@ -585,7 +647,7 @@
 							<section class="post">
 								<div class="caja" id="stoneklinker">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Stone klinker</h3>
 										<p>Imagen de stone klinker</p>
 									</div>
 								</div>
@@ -593,7 +655,7 @@
 							<section class="post">
 								<div class="caja" id="tierrasibericas">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Tierras ibéricas</h3>
 										<p>Imagen de tierras ibéricas</p>
 									</div>
 								</div>
@@ -601,7 +663,7 @@
 							<section class="post">
 								<div class="caja" id="tropicalforest">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Tropical forest</h3>
 										<p>Imagen de tropical forest</p>
 									</div>
 								</div>
@@ -609,7 +671,7 @@
 							<section class="post">
 								<div class="caja" id="venecia">
 									<div class="content">
-										<h3>Barro</h3>
+										<h3>Venecia</h3>
 										<p>Imagen de venecia</p>
 									</div>
 								</div>
