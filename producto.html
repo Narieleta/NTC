@@ -152,9 +152,14 @@
 	           	}); 				
 				$("#menubamboo").click(function(event) {
 					event.preventDefault();
-					$("#pasarela").show("slow");
+					$("#pasarelabamboo").show("slow");
 
 				}); 
+				$("#menuvenecia").click(function(event) {
+					event.preventDefault();
+					$("#pasarelavenecia").show("slow");
+
+				});
 	        });
 	    </script>
 	</head>
@@ -183,10 +188,10 @@
             </header>
 
 		<!-- BANNER -->
-		<div id="pasarela" style="display: none">
+		<div id="pasarelabamboo" style="display: none">
 	        <section id="banner">
 	            <article>
-	                <img src="web/producto/bamboo/amb-bamboo2.jpg"  alt="" />
+	                <img src="web/producto/venezia/grd/amb2_mela_hebra_aloe.jpg"  alt="" />
 	                    <div class="inner">
 	                    	<h2><a href="#">Ambiente Bamboo.</a></h2>
 	                  	</div>
@@ -209,6 +214,46 @@
 	                      	<h2><a href="#">A tribute to the ceramic tradition.</a></h2>
 	                    </div>
 	            </article> -->
+	        </section> 
+		</div>
+		<div id="pasarelavenecia" style="display: none">
+	        <section id="banner">
+	            <article>
+	                <img src="web/producto/bamboo/amb-bamboo-cocina.jpg"  alt="" />
+	                    <div class="inner">
+	                    	<h2><a href="#">Ambiente Bamboo.</a></h2>
+	                  	</div>
+	            </article>
+	            <article>
+	                <img src="web/producto/venezia/grd/amb2_mela_hebra_aloe.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Cocina Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <article>
+	                <img src="web/producto/venezia/grd/damero-multico-mora-violetto.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Fachada Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <article>
+	                <img src="web/producto/venezia/grd/det_cottone_acacia.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Fachada Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <article>
+	                <img src="web/producto/venezia/grd/palazzo_cottone.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Fachada Bamboo.</a></h2>
+	                    </div>
+	            </article>
+	            <article>
+	                <img src="web/producto/venezia/grd/pesca-noce-amb.jpg" alt="" />
+	                    <div class="inner">
+	                      	<h2><a href="#">Fachada Bamboo.</a></h2>
+	                    </div>
+	            </article>
 	        </section> 
 		</div>
 		<section id="main" class="wrapper">
@@ -671,8 +716,10 @@
 							<section class="post">
 								<div class="caja" id="venecia">
 									<div class="content">
-										<h3>Venecia</h3>
-										<p>Imagen de venecia</p>
+										<a href="banner" id="menuvenecia">
+											<h3>Venecia</h3>
+											<p>Imagen de Venecia</p>
+										</a>
 									</div>
 								</div>
 							</section>
