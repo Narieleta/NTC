@@ -149,6 +149,8 @@
 	                $("#tierrasibericas").hide("slow");
 	                $("#tropicalforest").hide("slow");
 	                $("#venecia").hide("slow");
+	                $("#pasarelavenecia").hide("slow");
+	                $("#pasarelabamboo").hide("slow");
 	           	}); 				
 				$("#menubamboo").click(function(event) {
 					event.preventDefault();
@@ -157,10 +159,18 @@
 				}); 
 				$("#menuvenecia").click(function(event) {
 					event.preventDefault();
+					$("#banner").addClass('bamboo');
+					$("#carruselvenecia").addClass('banner');
 					$("#pasarelavenecia").show("slow");
 
 				});
 	        });
+	    </script>
+	    <script>
+	    	
+	    		var cabecera = document.getElementById("pasarelabamboo");
+	    		alert (cabecera);
+	    	
 	    </script>
 	</head>
 	<body>
@@ -213,11 +223,11 @@
 	                    <div class="inner">
 	                      	<h2><a href="#">A tribute to the ceramic tradition.</a></h2>
 	                    </div>
-	            </article> -->
-	        </section> 
-		</div>
+	            </article> 
+	        </section> -->
+		</div> 
 		<div id="pasarelavenecia" style="display: none">
-	        <section id="banner">
+	        <section id="carruselvenecia">
 	            <article>
 	                <img src="web/producto/bamboo/amb-bamboo-cocina.jpg"  alt="" />
 	                    <div class="inner">
