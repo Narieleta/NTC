@@ -72,6 +72,57 @@
 	                $("#madera").hide("slow");
 	                $("#barro").hide("slow");
 	           });
+	           $("#menuseries").click(function(event){
+	                event.preventDefault();
+	                $("#series").css("background-color", "grey");
+	                $("#menuseries").hide("slow");
+	                $("#menucerrarseries").show("slow");
+	                $("#bisell").show("slow");
+	                $("#bamboo").show("slow");
+	                $("#channel").show("slow");
+	                $("#classicfine").show("slow");
+	                $("#colisseum").show("slow");
+	                $("cometa").show("slow");
+	                $("cottostone").show("slow");
+	                $("cuarcita").show("slow");
+	                $("cube").show("slow");
+	                $("eclipse").show("slow");
+	                $("duna").show("slow");
+	                $("filterfloor").show("slow");
+	                $("formats").show("slow");
+	                $("gardencity").show("slow");
+	                $("ivy").show("slow");
+	                $("lagunagrande").show("slow");
+	                $("liebana").show("slow");
+	                $("lofty").show("slow");
+	                $("novecento").show("slow");
+	                $("mattone").show("slow");
+	                $("panal").show("slow");
+	                $("piemonte").show("slow");
+	                $("pietradiferenze").show("slow");
+	                $("quartzklinker").show("slow");
+	                $("rocasdegalicia").show("slow");
+	                $("rowcube").show("slow");
+	                $("scale").show("slow");
+	                $("signes").show("slow");
+	                $("symbols").show("slow");
+	                $("stoneklinker").show("slow");
+	                $("tierrasibericas").show("slow");
+	                $("tropicalforest").show("slow");
+	                $("venecia").show("slow");
+
+	           });
+	           $("#menucerrarseries").click(function(event){
+	                event.preventDefault();
+	                $("#tipologia").css("background-color", "white");
+	                $("#menutipologia").show("slow");
+	                $("#menucerrartipo").hide("slow");
+	                $("#ceramica").hide("slow");
+	                $("#cervolumetrica").hide("slow");
+	                $("#piedra").hide("slow");
+	                $("#madera").hide("slow");
+	                $("#barro").hide("slow");
+	           });
 	        });
 	    </script>
 	</head>
@@ -136,15 +187,25 @@
 								</div>
 							</section>
 							<section class="post">
-								<!-- <span class="image"><img src="web/images/series.png" alt="" /></span> -->
+								<!-- <span class="image"><img src="web/images/series.png" alt="" /></span>
 								<div class="content" id="series">
 									<h3>Series</h3>
-									<!-- <p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
-									<br/> -->
+									<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
+									<br/>
 									<p>IMAGEN DE SERIES</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Ver más</a></li>
 									</ul>
+								</div> -->
+								<div id="series">
+									<div class="content">
+										<h3>Series</h3>
+										<p>IMAGEN DE TIPOLOGIA</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuseries">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrarseries" style="display:none">Ver menos</a></li>
+										</ul>
+								  	</div>
 								</div>
 							</section>
 							<section class="post">
