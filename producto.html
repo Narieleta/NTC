@@ -11,10 +11,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="web/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="web/css/noscript.css" /></noscript>
        	<link rel="stylesheet" href="web/css/normalize.css">
-
 		<link rel="stylesheet" type="text/css" href="vendor/TipueSearch/tipuesearch/tipuesearch.css">
 		<script src="vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-	    <script>
+		<script>
 	        $(document).ready(function(){
 	            $("#menuaplicacion").click(function(event){
 	                event.preventDefault();
@@ -152,9 +151,10 @@
 	                $("#pasarelavenecia").hide("slow");
 	                $("#pasarelabamboo").hide("slow");
 	           	}); 				
-				$("#menubamboo").click(function(event) {
+				/*$("#menubamboo").click(function(event) {
 					event.preventDefault();
 					$("#pasarelabamboo").show("slow");
+					$('.pgwlslideshow').PgwSlideshow();
 
 				}); 
 				$("#menuvenecia").click(function(event) {
@@ -163,15 +163,10 @@
 					$("#carruselvenecia").addClass('banner');
 					$("#pasarelavenecia").show("slow");
 
-				});
+				}); */
 	        });
 	    </script>
-	    <script>
-	    	
-	    		var cabecera = document.getElementById("pasarelabamboo");
-	    		alert (cabecera);
-	    	
-	    </script>
+	    
 	</head>
 	<body>
 
@@ -198,7 +193,7 @@
             </header>
 
 		<!-- BANNER -->
-		<div id="pasarelabamboo" style="display: none">
+		<div id="pasarelabamboo" style="display: none" class="pgwSlideshow">
 	        <section id="banner">
 	            <article>
 	                <img src="web/producto/venezia/grd/amb2_mela_hebra_aloe.jpg"  alt="" />
@@ -476,7 +471,7 @@
 							<section class="post">
 								<div class="caja" id="bamboo">
 									<div class="content">
-										<a href="#" id="menubamboo">
+										<a href="web/html/bamboo.html" id="menubamboo">
 											<h3>Bamboo</h3>
 											<p>Imagen de bamboo</p>
 										</a>
