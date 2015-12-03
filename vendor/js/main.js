@@ -319,22 +319,7 @@ var settings = {
 
 			}
 
-		// Añadido por Marcos para hacer funcionar el carrusel venecia
-
-			/*if ($carruselvenecia.length > 0
-			&&	$header.hasClass('alt')) {
-
-				$window.on('resize', function() { $window.trigger('scroll'); });
-
-				$carruselvenecia.scrollex({
-					bottom:		$header.outerHeight(),
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
-				});
-
-			}
-			$carruselvenecia._slider(settings.carruselvenecia); */
+		
 
 		// Banner.
 			$banner._slider(settings.banner);

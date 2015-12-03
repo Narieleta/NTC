@@ -3833,11 +3833,6 @@
 			margin-top: -3.5em;
 		}
 
-/* HEADER AÑADIDO POR MARCOS */
-		#header + #carruselvenecia {
-			margin-top: -3.5em;
-		}
-
 		#header.reveal {
 			-moz-animation: reveal-header 0.5s ease;
 			-webkit-animation: reveal-header 0.5s ease;
