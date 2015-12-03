@@ -28,6 +28,11 @@
 	            $("#menuaplicacion").click(function(event){
 	                event.preventDefault();
 	                $("#aplicacion").css("background-color", "grey");
+	                /* PRUEBA DE ESCONDER TODO EL DIV ENTERO Y AHORRAR COMANDOS */
+	                /* 
+	                *  PODRÍA PONER UN SÓLO DIV, PERO EL EFECTO QUE HACE ABRIENDO
+	                *  TODOS ES BASTANTE AGRADABLE Y NO MERECE LA PENA CAMBIARLO
+	                */
 	                $("#cocina").show("slow");
 	                $("#baño").show("slow");
 	                $("#revinterior").show("slow");
@@ -40,6 +45,7 @@
 	                $("#comercio").show("slow");
 	                $("#fachadas").show("slow");
 	                $("#jardines").show("slow");
+	                
 	            });
 
 	            $("#menucerrar").click(function(event){
@@ -193,7 +199,7 @@
                 </nav>
             </header>
 
-		<!-- BANNER -->
+		<!-- BANNER QUE EN PRINCIPIO SOBRA 
 		<div id="pasarelabamboo" style="display: none" class="pgwSlideshow">
 	        <section id="banner">
 	            <article>
@@ -219,16 +225,17 @@
 	                    <div class="inner">
 	                      	<h2><a href="#">A tribute to the ceramic tradition.</a></h2>
 	                    </div>
-	            </article> -->
+	            </article> 
 	        </section> 
-		</div> 
+		</div> -->
 		
+		<!-- MENÚS PRINCIPALES -->
 		<section id="main" class="wrapper">
 				<div class="inner">
 
 					<header class="major">
 						<h2>PRODUCTO</h2><br><br><br>
-						<div class="posts">
+						<div id="principal" class="posts">
 							<section class="post">
 								<!-- <span class="image"><img src="web/images/aplicacion.png" alt="" /></span> -->
 								<div id="aplicacion">
@@ -273,7 +280,7 @@
 								<div id="series">
 									<div class="content">
 										<h3>Series</h3>
-										<p>IMAGEN DE TIPOLOGIA</p>
+										<p>IMAGEN DE SERIES</p>
 										<ul class="actions">
 											<li><a href="#" class="button" id="menuseries">Ver más</a></li>
 											<li><a href="#" class="button" id="menucerrarseries" style="display:none">Ver menos</a></li>
@@ -281,6 +288,10 @@
 								  	</div>
 								</div>
 							</section>
+						</div>
+
+						<!-- MENÚS DE APLICACIÓN -->
+						<div id="apli" class="posts">
 							<section class="post">
 								<div class="caja" id="cocina">
 									<div class="content">
@@ -382,6 +393,10 @@
 								  	</div>
 								</div>
 							</section>
+						</div>
+
+						<!-- MENÚ DE TIPOLOGÍA -->
+						<div id="tipo" class="posts">
 							<section class="post">
 								<div class="caja" id="cottos">
 									<div class="content">
@@ -438,6 +453,10 @@
 									</div>
 								</div>
 							</section>
+						</div>
+
+						<!-- MENÚ DE SERIES -->
+						<div id="series" class="posts">
 							<section class="post">
 								<div class="caja" id="bisell">
 									<div class="content">
@@ -706,7 +725,8 @@
 									</div>
 								</div>
 							</section>
-						</div>
+						</div>	
+						
 					</header>
             	</div>
 		</section>
