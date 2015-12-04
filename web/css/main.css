@@ -4564,3 +4564,6 @@
 		display: none;
 	}
 
+	.cajatipologia{
+		background-image: url(../images/tipologia.png);
+	}
