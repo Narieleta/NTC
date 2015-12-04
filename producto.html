@@ -68,8 +68,8 @@
 	            $("#menutipologia").click(function(event){
 	                event.preventDefault();
 	                //$("#tipologia").css("background-color", "grey");
-	                //$("#menutipologia").hide("slow");
-	                //$("#menucerrartipo").show("slow");
+	                $("#menucerrartipo").show();
+	                $("#menutipologia").hide();
 	                $("#cottos").show("slow");
 	                $("#maderas").show("slow");
 	                $("#piedras").show("slow");
@@ -77,12 +77,14 @@
 	                $("#formas").show("slow");
 	                $("#artesanal").show("slow");
 	                $("#tradicional").show("slow");
+
+
 	            });
 	            $("#menucerrartipo").click(function(event){
 	                event.preventDefault();
-	                $("#tipologia").css("background-color", "white");
-	                $("#menutipologia").show("slow");
-	                $("#menucerrartipo").hide("slow");
+	                //$("#tipologia").css("background-color", "white");
+	                $("#menutipologia").show();
+	                $("#menucerrartipo").hide();
 	                $("#cottos").hide("slow");
 	                $("#maderas").hide("slow");
 	                $("#piedras").hide("slow");
@@ -225,8 +227,12 @@
 								<div class="cajatipologia" id="tipologia">
 
 									<div class="content">
-									<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a></span>
-									
+										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a>
+										<a href="#" id="menucerrartipo" style="display: none"><img src="web/images/tipologia.png" /></a>
+										</span>
+										<!-- CON ESTO FUNCIONA
+										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a></span>
+										<span class="image"><a href="#" id="menucerrartipo" style="display: none"><img src="web/images/tipologia.png" /></a></span>
 										
 										<!-- <h3>Tipologia</h3>
 										<p>Si se dedica al sector profesional y está buscando un formato en concreto,
