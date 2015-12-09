@@ -4359,24 +4359,32 @@
 		}
 
 		#footer .caja1{
-			
-			width: 30%;
+			border-style: solid;
+			border-color: red;
+			border-width: 0.5em;
+			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
+			
 		}
 
 		#footer .caja2{
-			
-			width: 30%;
+			border-style: solid;
+			border-color: red;
+			border-width: 0.5em;
+			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
 		}
 
 		#footer .caja3{
-			
-			width: 30%;
+			border-style: solid;
+			border-color: red;
+			border-width: 0.5em;
+			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
+			
 		}
 
 		#footer .inner {
