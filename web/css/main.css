@@ -4439,6 +4439,7 @@
 		#footer .menu {
 			color: #bbb;
 			font-size: 0.9em;
+			line-height: 50%;
 			/*position: absolute;*/
 			position: relative;
 			right: 0;
