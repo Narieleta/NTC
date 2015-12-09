@@ -4336,99 +4336,20 @@
 
 		}
 		
-		
-		
-		
-		
-		
 
 /* Footer */
 
 	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		/*-moz-flex-direction: column;*/
-		/*-webkit-flex-direction: column;*/
-		/*-ms-flex-direction: column;*/
-		/*flex-direction: column;*/
-		-moz-align-items: stretch;
-		-webkit-align-items: stretch;
-		-ms-align-items: stretch;
-		align-items: stretch; 
-		padding: 0 4em 0 4em ;
+		padding: 4em 0 2em 0 ;
 		border-top: solid 1px #e6e6e6;
 		position: relative;
-		border-left: solid 10px white;
-		/*column-count: 3;
-		column-gap: 10px;*/
-
-
 	}
-		/* Añadido por Marcos */
 
-		#footer .pie{
-			float: left;
-			padding: .5em;
-			margin: 10 auto;
-
-		}
-
-		#footer .caja1{
-			border-style: solid;
-			border-color: red;
-			border-width: 0.5em;
-			width: calc(33.33333333% - 1.25em);
-			position: inline-block;
-			float: left;
-			/* Si se pone un padding interno modifica lo de dentro*/ 
-			
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0;
-			
-		}
-
-		#footer .caja2{
-			border-style: solid;
-			border-color: red;
-			border-width: 0.5em;
-			width: calc(33.33333333% - 1.25em);
-			position: inline-block;
-			float: left;
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0; 
-
-			
-		}
-
-		#footer .caja3{
-			border-style: solid;
-			border-color: red;
-			border-width: 0.5em;
-			width: calc(33.33333333% - 1.25em);
-			position: inline-block;
-			float: left;
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0; 
-			
-		}
-
-		#footer .inner {
+		#footer > .inner {
 			margin: 0 auto;
 			max-width: 90em;
 			position: relative;
 			width: 90%;
-			float: left;
 		}
 
 		#footer .copyright {
@@ -4439,9 +4360,7 @@
 		#footer .menu {
 			color: #bbb;
 			font-size: 0.9em;
-			line-height: 50%;
-			/*position: absolute;*/
-			position: relative;
+			position: absolute;
 			right: 0;
 			top: 0;
 		}
@@ -4474,7 +4393,6 @@
 			}
 
 		}
-
 /* Navigation Panel */
 
 	#navPanel {
