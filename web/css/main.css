@@ -4356,6 +4356,12 @@
 			color: #bbb;
 			font-size: 0.9em;
 		}
+		/* Añadido por Marcos 09/12 */
+		#footer .copyright2 {
+			color: #bbb;
+			font-size: 0.75em;
+			text-align: center;
+		}
 
 		#footer .menu {
 			color: #bbb;
