@@ -4348,13 +4348,43 @@
 		padding: 4em 0 2em 0 ;
 		border-top: solid 1px #e6e6e6;
 		position: relative;
-	}
 
-		#footer > .inner {
+	}
+		/* Añadido por Marcos */
+
+		#footer .pie{
+			float: left;
+			padding: .5em;
+			margin: 10 auto;
+		}
+
+		#footer .caja1{
+			
+			width: 30%;
+			position: inline-block;
+			float: left;
+		}
+
+		#footer .caja2{
+			
+			width: 30%;
+			position: inline-block;
+			float: left;
+		}
+
+		#footer .caja3{
+			
+			width: 30%;
+			position: inline-block;
+			float: left;
+		}
+
+		#footer .inner {
 			margin: 0 auto;
 			max-width: 90em;
 			position: relative;
 			width: 90%;
+			float: left;
 		}
 
 		#footer .copyright {
@@ -4563,6 +4593,7 @@
 		background-color: #D8D8D8;
 		display: none;
 	}
+
 /* DESACTIVADA
 	.cajatipologia{
 		background-image: url(../images/tipologia.png);
