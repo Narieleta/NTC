@@ -4345,9 +4345,25 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 2em 0 ;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		/*-moz-flex-direction: column;*/
+		/*-webkit-flex-direction: column;*/
+		/*-ms-flex-direction: column;*/
+		/*flex-direction: column;*/
+		-moz-align-items: stretch;
+		-webkit-align-items: stretch;
+		-ms-align-items: stretch;
+		align-items: stretch; 
+		padding: 0 4em 0 4em ;
 		border-top: solid 1px #e6e6e6;
 		position: relative;
+		border-left: solid 10px white;
+		/*column-count: 3;
+		column-gap: 10px;*/
+
 
 	}
 		/* Añadido por Marcos */
@@ -4356,6 +4372,7 @@
 			float: left;
 			padding: .5em;
 			margin: 10 auto;
+
 		}
 
 		#footer .caja1{
@@ -4365,6 +4382,13 @@
 			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
+			/* Si se pone un padding interno modifica lo de dentro*/ 
+			
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
 			
 		}
 
@@ -4375,6 +4399,13 @@
 			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0; 
+
+			
 		}
 
 		#footer .caja3{
@@ -4384,6 +4415,11 @@
 			width: calc(33.33333333% - 1.25em);
 			position: inline-block;
 			float: left;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0; 
 			
 		}
 
