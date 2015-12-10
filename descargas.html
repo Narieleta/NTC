@@ -30,24 +30,28 @@
         
 			<header id="header">
 				<h1><a href="index.html"><img src="web/images/logos/logo-ngr.png" width="275" height="24"></a></h1>
-				<nav id="nav">
-					<ul>
+				<nav id="nav"><!--Hay que revisar la ubicación de la barra de este menú-->
+                	<ul>
 						<li><a href="index.html">Home</a></li>	
 						<li><a href="producto.html">Producto</a></li>
                         <li><a href="contacta.html">Contacta</a></li>
                         <li><a href="descargas.html">Descargas</a></li>
                         <li><a href="#">ENG</a></li>
-                        <li><div class="block2" style="padding-top: 40px;">
+                        <li><a href="#"><img src="web/images/icons/facebook.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/colored_twitter.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/instagram.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/pinterest.png" alt="" /></a></a></li>
+                        <li><div class="block2" style="padding-top: 40px;"><!--Tamaño original 45px-->
+                        
+                            <form action="search.html"> <!-- Por arreglar todavía 25-11-15 -->
+                            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+                            </form>
+                            </div>
+                        </li>
 
-								<form action="search.html">
-								<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-								</form>
-							</div>
-						</li>
-
-				  </ul>
+				  	</ul>
                   
-			  </nav>
+			  	</nav>
               
 	</header>
 		<section id="main" class="wrapper">
@@ -102,18 +106,18 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-	        <div class="inner">
-		        <p class="copyright">Natucer S.L. - C/Les Forques 2 · 12200 Onda · Tlf. +34 964 604 066 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="../images/icons/facebook.png" alt="" /></a>&nbsp;<a href="#"><img src="../images/icons/colored_twitter.png" alt="" /></a>&nbsp;<a href="#"><img src="../images/icons/instagram.png" alt="" /></a>&nbsp;<a href="#"><img src="../images/icons/pinterest.png" alt="" /></a></p>
+			<div class="inner">
+				<p class="copyright">Natucer S.L. - C/Les Forques 2 · 12200 Onda · Tlf. +34 964 604 066 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="web/images/icons/facebook.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/colored_twitter.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/instagram.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/pinterest.png" alt="" /></a></p>
 
-		        <p class="copyright2">&copy; Natucer. All rights reserved. Diseño Ocre Estudi Grafic S.L.</p>
+				<p class="copyright2">&copy; Natucer. All rights reserved. Diseño Ocre Estudi Grafic S.L.</p>
 
-		        <ul class="menu">
-		            <li><a href="#" >Politica de<span> Cookies</span></a></li>
-		            <!--<li><a href="#">Aviso<span> Legal</span></a></li>-->
-		            <li><a href="aviso.html" class="aviso" target="_blank" onclick="window.open(this.href, this.target,'scrollbars=yes,width=400,height=530'); return false;">Aviso <span> Legal</span></a></li>
-		        </ul>
-	        </div>
-      	</footer>
+				<ul class="menu">
+					<li><a href="#" >Politica de<span> Cookies</span></a></li>
+						<!--<li><a href="#">Aviso<span> Legal</span></a></li>-->
+                    <li><a href="aviso.html" class="aviso" target="_blank" onclick="window.open(this.href, this.target,'scrollbars=yes,width=400,height=530'); return false;">Aviso <span> Legal</span></a></li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="vendor/bower_components/jquery/dist/jquery.min.js"></script>
