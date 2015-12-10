@@ -1,0 +1,755 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Natucer - Cerámica Natural</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="vendor/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="web/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="web/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="web/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="web/css/noscript.css" /></noscript>
+       	<link rel="stylesheet" href="web/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="vendor/TipueSearch/tipuesearch/tipuesearch.css">
+		<script src="vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-70922035-1', 'auto');
+			  ga('send', 'pageview');
+
+		</script>
+		<script>
+	        $(document).ready(function(){
+	            $("#menuaplicacion").click(function(event){
+	                event.preventDefault();
+	                $("#aplicacion").css("background-color", "grey");
+	                /* PRUEBA DE ESCONDER TODO EL DIV ENTERO Y AHORRAR COMANDOS */
+	                /* 
+	                *  PODRÍA PONER UN SÓLO DIV, PERO EL EFECTO QUE HACE ABRIENDO
+	                *  TODOS ES BASTANTE AGRADABLE Y NO MERECE LA PENA CAMBIARLO
+	                */
+	                $("#cocina").show("slow");
+	                $("#baño").show("slow");
+	                $("#revinterior").show("slow");
+	                $("#pavinterior").show("slow");
+	                $("#pavexterior").show("slow");
+	                $("#pavintext").show("slow");
+	                $("#piscinas").show("slow");
+	                $("#sepambientes").show("slow");
+	                $("#industrial").show("slow");
+	                $("#comercio").show("slow");
+	                $("#fachadas").show("slow");
+	                $("#jardines").show("slow");
+	                
+	            });
+
+	            $("#menucerrar").click(function(event){
+	                event.preventDefault();
+	                $("#aplicacion").css("background-color", "white");
+	                $("#cocina").hide("slow");
+	                $("#baño").hide("slow");
+	                $("#revinterior").hide("slow");
+	                $("#pavinterior").hide("slow");
+	                $("#pavexterior").hide("slow");
+	                $("#pavintext").hide("slow");
+	                $("#piscinas").hide("slow");
+	                $("#sepambientes").hide("slow");
+	                $("#industrial").hide("slow");
+	                $("#comercio").hide("slow");
+	                $("#fachadas").hide("slow");
+	                $("#jardines").hide("slow");
+	            });
+	           /* MENUTIPOLOGIA Y MENUCERRARTIPO SON LOS MENÚS QUE FUNCIONAN BIEN */
+	            $("#menutipologia").click(function(event){
+	                event.preventDefault();
+	                //$("#tipologia").css("background-color", "grey");
+	                $("#menucerrartipo").show();
+	                $("#menutipologia").hide();
+	                $("#cottos").show("slow");
+	                $("#maderas").show("slow");
+	                $("#piedras").show("slow");
+	                $("#hidraulico").show("slow");
+	                $("#formas").show("slow");
+	                $("#artesanal").show("slow");
+	                $("#tradicional").show("slow");
+	            });
+	            $("#menucerrartipo").click(function(event){
+	                event.preventDefault();
+	                //$("#tipologia").css("background-color", "white");
+	                $("#menutipologia").show();
+	                $("#menucerrartipo").hide();
+	                $("#cottos").hide("slow");
+	                $("#maderas").hide("slow");
+	                $("#piedras").hide("slow");
+	                $("#hidraulico").hide("slow");
+	                $("#formas").hide("slow");
+	                $("#artesanal").hide("slow");
+	                $("#tradicional").hide("slow");
+	           	});
+	           	$("#menuseries").click(function(event){
+	                event.preventDefault();
+	                $("#series").css("background-color", "grey");
+	                $("#menuseries").hide("slow");
+	                $("#menucerrarseries").show("slow");
+	                $("#bisell").show("slow");
+	                $("#bamboo").show("slow");
+	                $("#channel").show("slow");
+	                $("#classicfine").show("slow");
+	                $("#colisseum").show("slow");
+	                $("#cometa").show("slow");
+	                $("#cottostone").show("slow");
+	                $("#cuarcita").show("slow");
+	                $("#cube").show("slow");
+	                $("#eclipse").show("slow");
+	                $("#duna").show("slow");
+	                $("#filterfloor").show("slow");
+	                $("#formats").show("slow");
+	                $("#gardencity").show("slow");
+	                $("#ivy").show("slow");
+	                $("#lagunagrande").show("slow");
+	                $("#liebana").show("slow");
+	                $("#lofty").show("slow");
+	                $("#novecento").show("slow");
+	                $("#mattone").show("slow");
+	                $("#panal").show("slow");
+	                $("#piemonte").show("slow");
+	                $("#pietradiferenze").show("slow");
+	                $("#quartzklinker").show("slow");
+	                $("#rocasdegalicia").show("slow");
+	                $("#rowcube").show("slow");
+	                $("#scale").show("slow");
+	                $("#signes").show("slow");
+	                $("#symbols").show("slow");
+	                $("#stoneklinker").show("slow");
+	                $("#tierrasibericas").show("slow");
+	                $("#tropicalforest").show("slow");
+	                $("#venecia").show("slow");
+	           	});
+	           	$("#menucerrarseries").click(function(event){
+	                event.preventDefault();
+	                $("#series").css("background-color", "white");
+	                $("#menuseries").show("slow");
+	                $("#menucerrarseries").hide("slow");
+	                $("#bisell").hide("slow");
+	                $("#bamboo").hide("slow");
+	                $("#channel").hide("slow");
+	                $("#classicfine").hide("slow");
+	                $("#colisseum").hide("slow");
+	                $("#cometa").hide("slow");
+	                $("#cottostone").hide("slow");
+	                $("#cuarcita").hide("slow");
+	                $("#cube").hide("slow");
+	                $("#eclipse").hide("slow");
+	                $("#duna").hide("slow");
+	                $("#filterfloor").hide("slow");
+	                $("#formats").hide("slow");
+	                $("#gardencity").hide("slow");
+	                $("#ivy").hide("slow");
+	                $("#lagunagrande").hide("slow");
+	                $("#liebana").hide("slow");
+	                $("#lofty").hide("slow");
+	                $("#novecento").hide("slow");
+	                $("#mattone").hide("slow");
+	                $("#panal").hide("slow");
+	                $("#piemonte").hide("slow");
+	                $("#pietradiferenze").hide("slow");
+	                $("#quartzklinker").hide("slow");
+	                $("#rocasdegalicia").hide("slow");
+	                $("#rowcube").hide("slow");
+	                $("#scale").hide("slow");
+	                $("#signes").hide("slow");
+	                $("#symbols").hide("slow");
+	                $("#stoneklinker").hide("slow");
+	                $("#tierrasibericas").hide("slow");
+	                $("#tropicalforest").hide("slow");
+	                $("#venecia").hide("slow");
+	                $("#pasarelavenecia").hide("slow");
+	                $("#pasarelabamboo").hide("slow");
+	           	}); 				
+			});
+	    </script>
+	    
+	</head>
+	<body>
+
+		<!-- Header -->
+        	
+			<header id="header">
+				<h1><a href="index.html"><img src="web/images/logos/logo-ngr.png" width="275" height="24"></a></h1>
+				<nav id="nav"><!--Hay que revisar la ubicación de la barra de este menú-->
+                	<ul>
+						<li><a href="index.html">Home</a></li>	
+						<li><a href="producto.html">Producto</a></li>
+                        <li><a href="contacta.html">Contacta</a></li>
+                        <li><a href="descargas.html">Descargas</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#"><img src="web/images/icons/facebook.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/colored_twitter.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/instagram.png" alt="" /></a></a>
+                        <a href="#"><img src="web/images/icons/pinterest.png" alt="" /></a></a></li>
+                        <li><div class="block2" style="padding-top: 40px;"><!--Tamaño original 45px-->
+                        
+                            <form action="search.html"> <!-- Por arreglar todavía 25-11-15 -->
+                            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+                            </form>
+                            </div>
+                        </li>
+
+				  	</ul>
+                  
+			  	</nav>
+              
+			</header>
+		<!-- MENÚS PRINCIPALES -->
+		<section id="main" class="wrapper">
+				<div class="inner">
+
+					<header class="major">
+						<h2>PRODUCTO</h2><br>
+						<div id="principal" class="posts">
+							<section class="post">
+								<!-- <span class="image"><img src="web/images/aplicacion.png" alt="" /></span> -->
+								<div id="aplicacion">
+									<div class="content">
+										<h3>Aplicación</h3>
+										<!--<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p> -->
+										<p>IMAGEN DE APLICACION</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<!-- <span class="image"><img src="web/images/tipologia.png" alt="" /></span> -->
+								<div class="cajatipologia" id="tipologia">
+
+									<div class="content">
+										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a>
+										<a href="#" id="menucerrartipo" style="display: none"><img src="web/images/tipologia.png" /></a>
+										</span>
+										<!-- CON ESTO FUNCIONA
+										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a></span>
+										<span class="image"><a href="#" id="menucerrartipo" style="display: none"><img src="web/images/tipologia.png" /></a></span>
+										
+										<!-- <h3>Tipologia</h3>
+										<p>Si se dedica al sector profesional y está buscando un formato en concreto,
+		                                aquí lo encontrará.</p> 
+		                                <br/>
+		                                <p>IMAGEN DE TIPOLOGIA</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menutipologia">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrartipo" style="display:none">Ver menos</a></li>
+										</ul> -->
+										
+								  	</div>
+								</div>
+							</section>
+							<!-- PARA COPIAR 
+							<section class="post">
+								<div class="caja" id="bamboo">
+									<div class="content">
+										<a href="web/html/bamboo.html" id="menubamboo">
+											<h3>Bamboo</h3>
+											<p>Imagen de bamboo</p>
+										</a>
+									</div>
+								</div>
+							</section> -->
+							<section class="post">
+								<!-- <span class="image"><img src="web/images/series.png" alt="" /></span>
+								<div class="content" id="series">
+									<h3>Series</h3>
+									<p>Si conoce el nombre de la serie, búsquela directamente entrando en esta sección.</p>
+									<br/>
+									<p>IMAGEN DE SERIES</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Ver más</a></li>
+									</ul>
+								</div> -->
+								<div id="series">
+									<div class="content">
+										<h3>Series</h3>
+										<p>IMAGEN DE SERIES</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuseries">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrarseries" style="display:none">Ver menos</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</section>
+						</div>
+
+						<!-- MENÚS DE APLICACIÓN -->
+						<div id="apli" class="posts">
+							<section class="post">
+								<div class="caja" id="cocina">
+									<div class="content">
+										<a href="#" id="menucerrar">
+											<h3>Cocina</h3>
+											<p>Imagen de cocinas</p>
+										</a>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="baño">
+									<div class="content">
+										<h3>Baño</h3>
+										<p>Imagen de baños</p>
+										<!-- <ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+										</ul> -->
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="revinterior">
+									<div class="content">
+										<h3>Revestimiento interior</h3>
+										<p>Imagen de revestimiento interior</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="pavinterior">
+									<div class="content">
+										<h3>Pavimento interior</h3>
+										<p>Imagen pavimentos interiores</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="pavexterior">
+									<div class="content">
+										<h3>Pavimento exterior</h3>
+										<p>Imagen pavimento exterior</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="pavintext">
+									<div class="content">
+										<h3>Pavimento exterior e interior</h3>
+										<p>Imagen pavimentos exteriores e interiores</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="piscinas">
+									<div class="content">
+										<h3>Piscina / Wellness</h3>
+										<p>Imagen Piscinas / Wellness</p>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="sepambientes">
+									<div class="content">
+										<h3>Separador de ambientes</h3>
+										<p>Imagen separador de ambientes</p>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="industrial">
+									<div class="content">
+										<h3>Industrial</h3>
+										<p>Imagen industrial</p>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="comercio">
+									<div class="content">
+										<h3>Comercio / Público</h3>
+										<p>Imagen comercio</p>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="fachadas">
+									<div class="content">
+										<h3>Fachadas</h3>
+										<p>Imagen fachadas</p>
+								  	</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="jardines">
+									<div class="content">
+										<h3>Jardines y exteriores</h3>
+										<p>Imagen jardines y exteriores</p>
+								  	</div>
+								</div>
+							</section>
+						</div>
+
+						<!-- MENÚ DE TIPOLOGÍA -->
+						<div id="tipo" class="posts">
+							<section class="post">
+								<div class="caja" id="cottos">
+									<div class="content">
+										<h3>Cottos</h3>
+										<p>Imagen de cottos</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="piedras">
+									<div class="content">
+										<h3>Piedras</h3>
+										<p>Imagen de piedras</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="maderas">
+									<div class="content">
+										<h3>Maderas</h3>
+										<p>Imagen de maderas</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="hidraulico">
+									<div class="content">
+										<h3>Hidráulicos</h3>
+										<p>Imagen de hidráulicos</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="formas">
+									<div class="content">
+										<h3>Formas (Creation)</h3>
+										<p>Imagen de formas</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="artesanal">
+									<div class="content">
+										<h3>Artesanal</h3>
+										<p>Imagen de artesanal</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="tradicional">
+									<div class="content">
+										<h3>Tradicional</h3>
+										<p>Imagen de tradicional</p>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<!-- MENÚ DE SERIES -->
+						<div id="series" class="posts">
+							<section class="post">
+								<div class="caja" id="bisell">
+									<div class="content">
+										<h3>Bisell</h3>
+										<p>Imagen de bisell</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="bamboo">
+									<div class="content">
+										<a href="web/html/bamboo.html" id="menubamboo">
+											<h3>Bamboo</h3>
+											<p>Imagen de bamboo</p>
+										</a>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="channel">
+									<div class="content">
+										<h3>Channel</h3>
+										<p>Imagen de channel</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="classicfine">
+									<div class="content">
+										<h3>Classic Fine</h3>
+										<p>Imagen de classic fine</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="colisseum">
+									<div class="content">
+										<h3>Colisseum</h3>
+										<p>Imagen de colisseum</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cometa">
+									<div class="content">
+										<h3>Cometa</h3>
+										<p>Imagen de cometa</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cottostone">
+									<div class="content">
+										<h3>Cottostone</h3>
+										<p>Imagen de cottostone</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cuarcita">
+									<div class="content">
+										<h3>Cuarcita</h3>
+										<p>Imagen de cuarcita</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="cube">
+									<div class="content">
+										<h3>Cube</h3>
+										<p>Imagen de cube</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="eclipse">
+									<div class="content">
+										<h3>Eclipse</h3>
+										<p>Imagen de eclipse</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="duna">
+									<div class="content">
+										<h3>Duna</h3>
+										<p>Imagen de duna</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="filterfloor">
+									<div class="content">
+										<h3>Filter Floor</h3>
+										<p>Imagen de filter floor</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="formats">
+									<div class="content">
+										<h3>Formats</h3>
+										<p>Imagen de formats</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="gardencity">
+									<div class="content">
+										<h3>Garden city</h3>
+										<p>Imagen de garden city</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="ivy">
+									<div class="content">
+										<h3>Content</h3>
+										<p>Imagen de ivy</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="lagunagrande">
+									<div class="content">
+										<h3>Laguna grande</h3>
+										<p>Imagen de laguna grande</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="liebana">
+									<div class="content">
+										<h3>Liébana</h3>
+										<p>Imagen de liébana</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="lofty">
+									<div class="content">
+										<h3>Lofty</h3>
+										<p>Imagen de lofty</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="novecento">
+									<div class="content">
+										<h3>Novecento</h3>
+										<p>Imagen de novecento</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="mattone">
+									<div class="content">
+										<h3>Mattone</h3>
+										<p>Imagen de mattone</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="panal">
+									<div class="content">
+										<h3>Panal</h3>
+										<p>Imagen de panal</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="piemonte">
+									<div class="content">
+										<h3>Piemonte</h3>
+										<p>Imagen de piemonte</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="pietradiferenze">
+									<div class="content">
+										<h3>Pietra di ferenze</h3>
+										<p>Imagen de pietra di ferenze</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="quartzklinker">
+									<div class="content">
+										<h3>Quartz klinker</h3>
+										<p>Imagen de quartz klinker</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="rocasdegalicia">
+									<div class="content">
+										<h3>Rocas de Galicia</h3>
+										<p>Imagen de rocas de galicia</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="rowcube">
+									<div class="content">
+										<h3>Row cube</h3>
+										<p>Imagen de rowcube</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="scale">
+									<div class="content">
+										<h3>Scale</h3>
+										<p>Imagen de scale</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="signes">
+									<div class="content">
+										<h3>Signes</h3>
+										<p>Imagen de signes</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="symbols">
+									<div class="content">
+										<h3>Symbols</h3>
+										<p>Imagen de symbols</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="stoneklinker">
+									<div class="content">
+										<h3>Stone klinker</h3>
+										<p>Imagen de stone klinker</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="tierrasibericas">
+									<div class="content">
+										<h3>Tierras ibéricas</h3>
+										<p>Imagen de tierras ibéricas</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="tropicalforest">
+									<div class="content">
+										<h3>Tropical forest</h3>
+										<p>Imagen de tropical forest</p>
+									</div>
+								</div>
+							</section>
+							<section class="post">
+								<div class="caja" id="venecia">
+									<div class="content">
+										<a href="web/html/venecia.html" id="menuvenecia">
+											<h3>Venecia</h3>
+											<p>Imagen de Venecia</p>
+										</a>
+									</div>
+								</div>
+							</section>
+						</div>	
+						
+					</header>
+            	</div>
+		</section>
+		
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<p class="copyright">Natucer S.L. - C/Les Forques 2 · 12200 Onda · Tlf. +34 964 604 066 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="web/images/icons/facebook.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/colored_twitter.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/instagram.png" alt="" /></a>&nbsp;<a href="#"><img src="web/images/icons/pinterest.png" alt="" /></a></p>
+
+					<p class="copyright2">&copy; Natucer. All rights reserved. Diseño Ocre Estudi Grafic S.L.</p>
+
+					<ul class="menu">
+						<li><a href="#" >Politica de<span> Cookies</span></a></li>
+						<!--<li><a href="#">Aviso<span> Legal</span></a></li>-->
+                        <li><a href="aviso.html" class="aviso" target="_blank" onclick="window.open(this.href, this.target,'scrollbars=yes,width=400,height=530'); return false;">Aviso <span> Legal</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="vendor/bower_components/jquery/dist/jquery.min.js"></script>
+			<script src="vendor/js/jquery.dropotron.min.js"></script>
+			<script src="vendor/js/jquery.scrollex.min.js"></script>
+			<script src="vendor/js/skel.min.js"></script>
+			<script src="vendor/js/util.js"></script>
+			<!--[if lte IE 8]><script src="vendor/js/ie/respond.min.js"></script><![endif]-->
+			<script src="vendor/js/main.js"></script>
+
+	</body>
+</html>
