@@ -14,14 +14,39 @@
         <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../vendor/TipueSearch/tipuesearch/tipuesearch.css">
     <script src="../../vendor/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    
+    <!--<script type="text/javascript">
+      $(document).ready(function() {
+        var posicion = $("#caja_flotante").offset();
+        var margenSuperior = 130;
+         $(window).scroll(function() {
+             if ($(window).scrollTop() > posicion.top) {
+                 $("#caja_flotante").stop().animate({
+                     marginTop: $(window).scrollTop() - posicion.top + margenSuperior
+                 });
+             } else {
+                 $("#caja_flotante").stop().animate({
+                     marginTop: 0
+                 });
+             };
+         });
+      });
+    </script> -->
   </head>
-  <body>
+
+  <body>  
+
+    <!--<div id="caja_flotante">
+          <div id="contenido_caja_flotante">
+              
+              <a href="maderas.html"><img src="../images/icons/rewind64.png" alt="volver atrás" /></a>
+          </div>
+    </div>
+  -->
 
     <!-- Header -->
         
       <header id="header">
-        <h1><a href="index.html"><img src="../images/logos/logo-ngr.png" width="275" height="50"></a></h1>
+        <h1><a href="../../index.html"><img src="../images/logos/logo-ngr.png" width="275" height="50"></a></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="maderas.html"><img src="../images/icons/rewind64.png" alt="volver atrás" /></a>
         <nav id="nav"><!--Hay que revisar la ubicación de la barra de este menú-->
                   <ul>
             <li><a href="../../index.html">Home</a></li>  
@@ -130,8 +155,8 @@
               </div>
               </section> -->
 
-              <div class="post descripcion">
-                <img class="logo_prod"src="../images/series/nordik/despiece1.png"><br>
+              <div style="text-align: center">
+                <img class="des-imagen"src="../images/series/nordik/despiece1.png"><br>
                 <img class="des-imagen"src="../images/series/nordik/despiece2.png">
                 
 

@@ -4571,6 +4571,20 @@
 		background-color: none;
 		display: block;
 	}
+	#caja_flotante{
+        position: absolute;
+        top:130px;
+        left: 45px;
+        border: 1px solid #CCC;
+        background-color: #F2F2F2;
+        width:80px;
+	}
+	.des-imagen{
+		height: auto;
+		max-width: 100%;
+		padding:2%;
+		margin-top: -50px;
+	}
 /* DESACTIVADA
 	.cajatipologia{
 		background-image: url(../images/tipologia.png);
