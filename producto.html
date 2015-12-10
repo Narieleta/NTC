@@ -77,6 +77,19 @@
 	                $("#formas").show("slow");
 	                $("#artesanal").show("slow");
 	                $("#tradicional").show("slow");
+	                $("#aplicacion").css("background-color", "white");
+	                $("#cocina").hide("slow");
+	                $("#baño").hide("slow");
+	                $("#revinterior").hide("slow");
+	                $("#pavinterior").hide("slow");
+	                $("#pavexterior").hide("slow");
+	                $("#pavintext").hide("slow");
+	                $("#piscinas").hide("slow");
+	                $("#sepambientes").hide("slow");
+	                $("#industrial").hide("slow");
+	                $("#comercio").hide("slow");
+	                $("#fachadas").hide("slow");
+	                $("#jardines").hide("slow");
 	            });
 	            $("#menucerrartipo").click(function(event){
 	                event.preventDefault();
@@ -213,26 +226,12 @@
 						<h2>PRODUCTO</h2><br>
 						<div id="principal" class="posts">
 							<section class="post">
-								<!-- <span class="image"><img src="web/images/aplicacion.png" alt="" /></span> -->
-								<div id="aplicacion">
-									<div class="content">
-										<h3>Aplicación</h3>
-										<!--<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p> -->
-										<p>IMAGEN DE APLICACION</p>
-										<ul class="actions">
-											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
-											<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
-										</ul>
-								  	</div>
-								</div>
-							</section>
-							<section class="post">
 								<!-- <span class="image"><img src="web/images/tipologia.png" alt="" /></span> -->
 								<div class="cajatipologia" id="tipologia">
 
 									<div class="content">
-										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a>
-										<a href="#" id="menucerrartipo" style="display: none"><img src="web/images/tipologia.png" /></a>
+										<span class="image"><a href="#" id="menutipologia"><img src="web/images/imagenes/tipologia.png" /></a>
+										<a href="#" id="menucerrartipo" style="display: none"><img src="web/images/imagenes/tipologia.png" /></a>
 										</span>
 										<!-- CON ESTO FUNCIONA
 										<span class="image"><a href="#" id="menutipologia"><img src="web/images/tipologia.png" /></a></span>
@@ -251,6 +250,29 @@
 								  	</div>
 								</div>
 							</section>
+							<section class="post">
+								<!-- <span class="image"><img src="web/images/aplicacion.png" alt="" /></span>
+								<div id="aplicacion">
+									<div class="content">
+										<h3>Aplicación</h3>
+										<p>Baño, cocina, interior, exterior... Encuentre el producto según el tipo de ambiente que quiera vestir.</p> 
+										<p>IMAGEN DE APLICACION</p>
+										<ul class="actions">
+											<li><a href="#" class="button" id="menuaplicacion">Ver más</a></li>
+											<li><a href="#" class="button" id="menucerrar">Ver menos</a></li>
+										</ul>
+								  	</div>
+								</div> -->
+								<div class="cajaaplicacion" id="aplicacion">
+
+									<div class="content">
+										<span class="image"><a href="#" id="menuaplicacion"><img src="web/images/imagenes/estancias.png" /></a>
+										<a href="#" id="menucerrar" style="display: none"><img src="web/images/tipologia.png" /></a>
+										</span>
+									</div>
+								</div>
+							</section>
+							
 							<!-- PARA COPIAR 
 							<section class="post">
 								<div class="caja" id="bamboo">
@@ -272,7 +294,7 @@
 									<ul class="actions">
 										<li><a href="#" class="button">Ver más</a></li>
 									</ul>
-								</div> -->
+								</div> 
 								<div id="series">
 									<div class="content">
 										<h3>Series</h3>
@@ -282,6 +304,14 @@
 											<li><a href="#" class="button" id="menucerrarseries" style="display:none">Ver menos</a></li>
 										</ul>
 								  	</div>
+								</div> -->
+								<div class="cajaseries" id="series">
+
+									<div class="content">
+										<span class="image"><a href="#" id="menuaplicacion"><img src="web/images/imagenes/series.png" /></a>
+										<a href="#" id="menucerrarseries" style="display: none"><img src="web/images/imagenes/series.png" /></a>
+										</span>
+									</div>
 								</div>
 							</section>
 						</div>
