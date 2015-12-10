@@ -4565,9 +4565,12 @@
 	}
 	.cajaapli{
 		background-color: #D8D8D8;
+		display: none;
+	}
+	.cajatipo{
+		background-color: none;
 		display: block;
 	}
-
 /* DESACTIVADA
 	.cajatipologia{
 		background-image: url(../images/tipologia.png);
